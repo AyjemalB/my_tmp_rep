@@ -1,0 +1,14 @@
+    1  clear
+    2  git clone git@github.com:AyjemalB/my_tmp_rep.git
+    3  cd my_tmp_rep
+    4  git checkout -b feature
+    5  echo "# My Project" > README.md
+    6  echo ".DS_Store" >> .gitignore
+    7  git add README.md .gitignore
+    8  git commit -m "Added README and updated .gitignore"
+    9  git push origin feature
+   10  git commit --amend -m "Added README and updated .gitignore ammend"
+   11  git push -f origin feature
+   12  git checkout main
+   13  git merge feature
+   14  history > history.txt
